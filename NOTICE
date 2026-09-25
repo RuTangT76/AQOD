@@ -1,0 +1,6 @@
+AQOD research prototype
+Copyright 2026 AQOD contributors
+
+This repository contains AQOD-owned source code and small configuration examples.
+It does not bundle the veRL, ATOD, ALFWorld, or model repositories. Those
+dependencies and assets are governed by their own licenses and terms.

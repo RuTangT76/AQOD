@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aqod-verl-adapter"
+version = "0.1.0"
+description = "AQOD method contracts and veRL/verl-agent infrastructure adapter"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.scripts]
+aqod-verl = "aqod_verl.main:main"
+
+[tool.setuptools]
+py-modules = ["aqod_online_trust"]
+
+[tool.setuptools.packages.find]
+include = ["aqod_verl*"]
+
+[tool.setuptools.package-data]
+aqod_verl = ["configs/*.json"]
